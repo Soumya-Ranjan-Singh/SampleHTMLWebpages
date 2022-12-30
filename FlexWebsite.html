@@ -1,0 +1,116 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  h4{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: cursive;
+    font-style: italic;
+  }
+  header{
+    background: yellowgreen;
+    height: 28vh;
+    text-align: center;
+    text-decoration: underline;
+  }
+  footer{
+    background: rgb(75, 95, 226);
+    height: 15vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  ul{
+    font: 1em sans-serif;
+    word-spacing: normal;
+    line-height: 200%;
+  }
+  p{
+    font: 1em sans-serif;
+    word-spacing: normal;
+    line-height: 150%;
+  }
+</style>
+<body>
+  <nav class="col-1">
+    <h1>Contents</h1>
+    <p>Here all the contents are given below</p>
+    <ul>
+      <li>What is Java?</li>
+      <li>Setting up your development environment</li>
+      <li>Java Tutorial</li>
+      <li>Control Statements</li>
+      <li>Java Object Class</li>
+      <li>Java Inheritance</li>
+      <li>Java Polymorphism</li>
+      <li>Java Abstraction</li>
+      <li>Java Encapsulation</li>
+      <li>Java Array</li>
+      <li>Java OOPs Misc</li>
+    </ul>
+  </nav>
+  <div class="col-2">
+  	<header>
+      <h1>JAVA Programing Language</h1>
+      <img src="./assets/istockphoto-1131109259-170667a.jpg" value="Sample Image" width="10%">
+    </header>
+    <main class="content">
+    <article>
+      <h2> What is Java?</h2>
+            <p>Java is a programming language and a platform.<br>
+              Java is a high level, robust, object-oriented and secure programming language.</p>
+     <h2>What kind of applications those can be created by means of JAVA?</h2>
+            <p>There are mainly 4 types of applications that can be created using Java programming:</p>
+            <ul>
+              <li>Standalone Application</li>
+              <li>Web Application</li>
+              <li>Enterprise Application</li>
+              <li>Mobile Application</li>
+            </ul>
+      </article>
+    <aside>
+      <h4>Other Programing Languages</h4>
+      <ul>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>C#</li>
+      </ul>
+    </aside>
+    </main>
+  	<footer>
+      <h3>About JAVA</h3>
+        <p>Refer to this link <a href="https://www.javatpoint.com">javatpoint</a> for more details</p>
+    </footer>
+  </div>
+</body>
